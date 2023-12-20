@@ -67,9 +67,9 @@ io.on("connection", (socket) => {
 
 // app.use("/myChat", chatRouter);
 
-// app.get("/", (req, res) => {
-//   res.send("Welcom to my API's");
-// });
+app.get("/", (req, res) => {
+  res.send("Welcom to my API's");
+});
 
 const PORT = 3001;
 server.listen(PORT, () => {
