@@ -19,7 +19,8 @@ app.use(cors());
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000",
+    // origin: "http://localhost:3000",
+    origin: "https://chat-app-frontend-three-alpha.vercel.app",
     methods: ["GET", "POST"],
   },
 });
@@ -71,8 +72,8 @@ app.get("/", (req, res) => {
   res.send("Welcom to my API's");
 });
 
-// const PORT = 3001;
-const PORT = "https://chat-app-frontend-three-alpha.vercel.app/";
+const PORT = 3001;
+// const PORT = "https://chat-app-frontend-three-alpha.vercel.app";
 server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
