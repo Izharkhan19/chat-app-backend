@@ -72,8 +72,10 @@ app.get("/", (req, res) => {
   res.send("Welcom to my API's");
 });
 
-const PORT = 3001;
+// const PORT = 3001;
 // const PORT = "https://chat-app-frontend-three-alpha.vercel.app";
+const PORT = "https://chat-backend-f083.onrender.com";
+
 server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
